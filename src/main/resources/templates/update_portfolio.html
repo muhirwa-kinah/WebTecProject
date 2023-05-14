@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+  />
+  <link rel="stylesheet" href="/css/styless.css" />
+  <title>Modeling-Agency</title>
+</head>
+<body>
+<header>
+  <!-- nav -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/bg.png" alt="logo" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <button>
+            <li class="bi bi-flower3"></li>
+          </button>
+        </ul>
+      </div>
+      <!-- <div class="indicator"></div> -->
+    </div>
+  </nav>
+  <!-- end nav -->
+</header>
+
+<section>
+  <div class="yose">
+    <div class="hero-heading">
+      Update<span class="italic"> portfolio</span>
+    </div>
+    <div class="hero-p">
+      Update your Names, Your height , Your weight Or a portfolio PDF as a
+      collection of work samples, Or a profile picture as an image that
+      represents you online.
+    </div>
+  </div>
+  <div class="contact">
+    <div class="contact-form">
+      <form th:action="@{/update}" method="post" th:object="${portfolio}" >
+        <!--1st row-->
+        <div class="row">
+          <input type="hidden" th:field="*{id}">
+          <div class="input50">
+            <label>Names</label>
+            <input type="text" name="name" th:field="*{name}" />
+          </div>
+          <div class="input50">
+            <label>Height</label>
+            <input type="text" placeholder="ex:'1m70cm'" name="height" th:field="*{height}"/>
+          </div>
+          <div class="input50">
+            <label>Weight</label>
+            <input type="text" placeholder="ex:'60kg'" name="weight" th:field="*{weight}"/>
+          </div>
+        </div>
+        <!--2nd row-->
+        <div class="row">
+          <div class="input50">
+            <label>Email</label>
+            <input type="email"  name="ownerEmail" th:field="*{ownerEmail}"/>
+          </div>
+          <div class="input50">
+            <label>Portfolio Pdf</label>
+            <input type="file" accept=".pdf" placeholder="pdf" name="pdf" th:field="*{pdf}"/>
+          </div>
+          <div class="input50">
+            <label>Profile Picture</label>
+            <input
+                    type="file"
+                    accept="image/*"
+                    placeholder="profile picture"
+                    name="image"
+                    th:field="*{image}"
+            />
+          </div>
+        </div>
+        <!--3rd row-->
+        <div class="row">
+          <div class="input100">
+            <textarea placeholder="Description" name="message" th:field="*{message}"></textarea>
+          </div>
+        </div>
+        <!--4th row-->
+        <div class="row">
+          <div class="input100">
+            <input type="submit" value="Update" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- <script src="/js/script.js"></script> -->
+</body>
+</html>

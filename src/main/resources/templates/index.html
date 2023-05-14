@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+            integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+            crossorigin="anonymous"
+    />
+    <!-- link font awesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Link to Material UI -->
+    <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+    />
+    <!-- Link to Fontawesome -->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <!-- Link to swiper JS -->
+    <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Modeling - Agency</title>
+</head>
+<body>
+<!-- header -->
+<header>
+    <!-- nav -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img src="./images/bg.png" alt="logo" />
+                </a>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#feature">Models</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- <div class="indicator"></div> -->
+        </div>
+    </nav>
+    <!-- end nav -->
+</header>
+<!-- header -->
+<!-- main -->
+<main>
+    <!-- hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <div class="hero-heading">
+                Taking <span class="italic">modelling</span> to a next level!
+            </div>
+            <div class="hero-p">
+                Welcome to StyleFusion! We are a premier modeling agency dedicated
+                to helping models reach their full potential. Our team of
+                experienced agents provides personalized guidance and support to
+                help you succeed in the industry. Browse our portfolio, learn about
+                our services, and apply to become a part of our talented roster.
+                We're excited to help you launch your modeling career!
+            </div>
+            <button class="btn cta-btn">
+                <a th:href="@{/login}">Create Account</a>
+            </button>
+        </div>
+        <div class="hero-images">
+            <div class="hero-image">
+                <div class="hero-img first">
+                    <img src="./images/Models/Mask Group.png" alt="" />
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img second">
+                    <img src="./images/Models/model1 (1).png" alt="" />
+                </div>
+            </div>
+            <div class="hero-image third">
+                <div class="hero-img third">
+                    <img src="./images/Models/model2.png" alt="" />
+                </div>
+            </div>
+            <div class="hero-image last">
+                <div class="hero-img last">
+                    <img src="./images/Models/Mask Group (1).png" alt="" />
+                </div>
+            </div>
+            <div class="sub sub-1">
+                <img src="./images/Subtract (1).svg" alt="" />
+            </div>
+            <div class="sub sub-0">
+                <img src="./images/Subtract.svg" alt="" />
+            </div>
+            <div class="sub sub-2">
+                <img src="./images/Ellipse 19.svg" alt="" />
+            </div>
+            <div class="sub sub-3">
+                <img src="./images/Ellipse 18.svg" alt="" />
+            </div>
+            <div class="sub sub-4">
+                <img src="./images/Ellipse 21.svg" alt="" />
+            </div>
+            <div class="sub sub-5">
+                <img src="./images/Ellipse 20.svg" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- end of hero -->
+    <!-- brands -->
+    <section class="brands">
+        <div class="brand"><img src="./images/brands/3 1.png" alt="" /></div>
+        <div class="brand"><img src="./images/brands/1-1 1.png" alt="" /></div>
+        <div class="brand"><img src="./images/brands/2 1.png" alt="" /></div>
+        <div class="brand"><img src="./images/brands/4 1.png" alt="" /></div>
+        <div class="brand"><img src="./images/brands/5 1.png" alt="" /></div>
+    </section>
+    <!-- end of brands -->
+    <!-- about -->
+    <section class="about" id="#about">
+        <div class="about-heading">
+            <h1 class="heading">Welcome to StyleFusion</h1>
+            <p class="sub-heading">who are we?</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="./images/Models/Rectangle 38.png" alt="model" />
+            </div>
+            <div class="about-text">
+                <div class="about-text-box">
+                    <h2 class="heading">
+                        We are a top <span class="italic">modelling</span> agency
+                    </h2>
+                    <p>
+                        This platform serves as a bridge between models and various
+                        modeling agencies, where models can connect with agencies that
+                        fit their preferences and abilities. Through StyleFusion, models
+                        can gain more exposure and access to potential job
+                        opportunities, while agencies can easily find suitable models
+                        for their projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img class="blop blop-1" src="./images/Ellipse 5.png" alt="blop" />
+        <img class="blop blop-2" src="./images/Ellipse 6.png" alt="Ellipse" />
+        <img class="blop blop-3" src="./images/Vector 1.svg" alt="Vector" />
+    </section>
+    <!-- end of about -->
+    <!-- sell -->
+    <section class="sell">
+        <div class="center-sell">
+            <img src="./images/Ellipse 7.svg" alt="blop" />
+        </div>
+        <div class="yellow">
+            <div class="sell-text">
+                <h1>Highly <span class="italic">professional</span></h1>
+                <h1>models</h1>
+                <p>
+                    Allows models to create profiles and showcase their credentials,
+                    experience, and skills. StyleFusion streamlines the modeling
+                    industry by providing a central hub for models and agencies to
+                    connect and collaborate.
+                </p>
+            </div>
+            <div class="sell-image">
+                <img
+                        src="./images/Models/model22 (1).jpg"
+                        alt="model"
+                        class="model"
+                />
+                <img
+                        class="blop blop-5"
+                        src="./images/Ellipse 16.svg"
+                        alt="Ellipse"
+                />
+                <img
+                        class="blop blop-6"
+                        src="./images/Ellipse 19.svg"
+                        alt="Ellipse"
+                />
+            </div>
+            <img class="blop blop-4" src="./images/Vector 2.svg" alt="Vector" />
+        </div>
+    </section>
+    <!-- end of sell -->
+    <!-- featured -->
+    <section class="featured" id="feature">
+        <div class="featured-heading">
+            <h1 class="heading">Featured models</h1>
+            <p class="sub-heading">
+                We've continued to grow as a modelling agency and now represent
+                thousands of diverse models across all races
+            </p>
+        </div>
+        <div class="models-grid">
+            <div class="model">
+                <div class="model-img">
+                    <img src="./images/Models/Rectangle 40.png" alt="model" />
+                    <div class="model-img-overlay">
+                        <a href="#"> View portfolio</a>
+                    </div>
+                </div>
+                <p class="model-name">madi zigler</p>
+            </div>
+            <div class="model">
+                <div class="model-img">
+                    <img src="./images/Models/Rectangle 41.png" alt="model" />
+                    <div class="model-img-overlay">
+                        <a href="#"> View portfolio</a>
+                    </div>
+                </div>
+                <p class="model-name">stephanie fernadez</p>
+            </div>
+            <div class="model">
+                <div class="model-img">
+                    <img src="./images/Models/EcV9DQoWoAAh2AH 1.png" alt="model" />
+                    <div class="model-img-overlay">
+                        <a href="#"> View portfolio</a>
+                    </div>
+                </div>
+                <p class="model-name">chioma eke</p>
+            </div>
+            <div class="model">
+                <div class="model-img">
+                    <img
+                            src="./images/Models/adult-attractive-beautiful-beauty-415829 1.png"
+                            alt="model"
+                    />
+                    <div class="model-img-overlay">
+                        <a href="#"> View portfolio</a>
+                    </div>
+                </div>
+                <p class="model-name">sam puket</p>
+            </div>
+            <div class="model">
+                <div class="model-img">
+                    <img
+                            src="./images/Models/woman-in-white-top-wearing-blue-knit-cap-4723556 1.png"
+                            alt="model"
+                    />
+                    <div class="model-img-overlay">
+                        <a href="#"> View portfolio</a>
+                    </div>
+                </div>
+                <p class="model-name">maddisson harper</p>
+            </div>
+            <div class="model">
+                <div class="model-img">
+                    <img
+                            src="./images/Models/atikh-bana-2c0midsQKe0-unsplash 1.png"
+                            alt="model"
+                    />
+                    <div class="model-img-overlay">
+                        <a href="#"> View portfolio</a>
+                    </div>
+                </div>
+                <p class="model-name">anita zee</p>
+            </div>
+            <div class="model">
+                <div class="model-img">
+                    <img
+                            src="./images/Models/woman-in-grey-long-sleeved-shirt-2787341 1.png"
+                            alt="model"
+                    />
+                    <div class="model-img-overlay">
+                        <a href="#"> View portfolio</a>
+                    </div>
+                </div>
+                <p class="model-name">christina orna</p>
+            </div>
+            <div class="model">
+                <div class="model-img">
+                    <img
+                            src="./images/Models/close-up-photo-of-woman-4673418 1.png"
+                            alt="model"
+                    />
+                    <div class="model-img-overlay">
+                        <a href="#"> View portfolio</a>
+                    </div>
+                </div>
+                <p class="model-name">ola obafemi</p>
+            </div>
+        </div>
+        <!-- <img class="blop blop-7" src="./images/Vector 3.svg" alt="Vector" /> -->
+        <button class="btn cta-btn">Load More</button>
+    </section>
+    <!-- <footer></footer> -->
+    <section class="footer" id="contact">
+        <div class="box-container">
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="index.html"><i class="fas fa-angle-right"></i>home</a>
+                <a href="#feature"><i class="fas fa-angle-right"></i>Models</a>
+                <a href="login.html"
+                ><i class="fas fa-angle-right"></i>Create Account</a
+                >
+            </div>
+            <div class="box">
+                <h3>Contact Us</h3>
+                <a href="#"><i class="fas fa-phone"></i>+250789160775</a>
+                <a href="#"><i class="fas fa-envelope"></i>stylefusion@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            </div>
+        </div>
+        <div class="credit">
+            &copy; <span>StyleFusion 2023</span> | All rights reserved!
+        </div>
+    </section>
+    <!-- <footer></footer> -->
+</main>
+<!-- end main -->
+<!-- aos -->
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous"
+></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modeling-Agency</title>
+  <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+</head>
+
+<body>
+<header>
+  <!-- nav -->
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a th:href="@{/}">
+          <img src="./images/bg.png" alt="logo" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <ul>
+          <button>
+            <li><a th:href="@{/}">Home</a></li>
+          </button>
+        </ul>
+      </div>
+      <!-- <div class="indicator"></div> -->
+    </div>
+  </nav>
+  <!-- end nav -->
+</header>
+<div class="container" id="container">
+  <div class="form-container sign-in-container">
+    <form th:action="@{/login}" method="post">
+      <!-- <h1>Sign in</h1> -->
+      <div class="hero-heading">Sign<span class="italic"> In</span></div>
+
+      <span>Welcome to StyleFusion</span>
+      <input type="email" placeholder="Email" name="email" required />
+      <input type="password" placeholder="Password" name="password" required />
+      <div class="kose">
+        <input type="checkbox" class="check" />
+        <label class="remember">remember me</label>
+      </div>
+      <a th:href="@{/reset-password}" class="pass">Forgot your password?</a>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+  <div class="overlay-container">
+    <div class="overlay">
+      <div class="overlay-panel overlay-right">
+        <h1>Hello, Friend!</h1>
+        <p>Enter your personal details and start journey with us</p>
+        <button class="ghost" id="signUp"><a th:href="@{/register}" >Sign UP</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="photo">
+  <div class="center-sell">
+    <img src="./images/Ellipse 7.svg" alt="blop" />
+  </div>
+  <div class="yellow">
+    <div class="sell-image">
+      <img
+              src="./images/Models/Rectangle 39.png"
+              alt="model"
+              class="model"
+      />
+      <img
+              class="blop blop-5"
+              src="./images/Ellipse 16.svg"
+              alt="Ellipse"
+      />
+      <img
+              class="blop blop-6"
+              src="./images/Ellipse 19.svg"
+              alt="Ellipse"
+      />
+    </div>
+  </div>
+</div>
+<script src="js/script.js"></script>
+<!-- <script src="js/main.js"></script> -->
+</body>
+</html>

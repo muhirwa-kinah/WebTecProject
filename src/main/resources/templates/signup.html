@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modeling-Agency</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/stylee.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  </head>
+
+  <body>
+    <header>
+      <!-- nav -->
+      <nav>
+        <div class="navbar">
+          <div class="logo">
+            <a  th:href="@{/}">
+              <img src="./images/bg.png" alt="logo" />
+            </a>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <button>
+                <li><a  th:href="@{/}">Home</a></li>
+              </button>
+            </ul>
+          </div>
+          <!-- <div class="indicator"></div> -->
+        </div>
+      </nav>
+      <!-- end nav -->
+    </header>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form th:action="@{/register}" method="post">
+          <div class="hero-heading">
+            Create<span class="italic"> Account</span>
+          </div>
+          <span>Get Started!</span>
+          <input type="text" placeholder="Name" name="name" required />
+          <input type="email" placeholder="Email" name="email" required />
+          <input type="text" placeholder="phone number" name="number" required />
+          <input type="password" placeholder="Password" name="password" required />
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">
+              <a th:href="@{/login}">Sign In</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="photo">
+      <div class="center-sell">
+        <img src="./images/Ellipse 7.svg" alt="blop" />
+      </div>
+      <div class="yellow">
+        <div class="sell-image">
+          <img
+            src="./images/Models/Rectangle 39.png"
+            alt="model"
+            class="model"
+          />
+          <img
+            class="blop blop-5"
+            src="./images/Ellipse 16.svg"
+            alt="Ellipse"
+          />
+          <img
+            class="blop blop-6"
+            src="./images/Ellipse 19.svg"
+            alt="Ellipse"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="js/main1.js"></script>
+  </body>
+</html>
